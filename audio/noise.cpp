@@ -12,7 +12,5 @@ int cardNum, totalCards;
 int main(){
 
 	snd_ctl_t *cardHandle;
-	
-	cout << 16/-3;
 	return 0;
 }
