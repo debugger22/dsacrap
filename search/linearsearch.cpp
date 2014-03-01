@@ -6,7 +6,7 @@ using namespace std;
 vector<int> data;
 int temp;
 int item;
-unsigned int found=0;
+bool found=false;
 unsigned int size;
 unsigned int comparision=0;
 unsigned int assignment=0;
@@ -20,7 +20,7 @@ int main(){
 	cin>>item;
 	for(int i=0;i<data.size();i++){
 		if(data.at(i)==item){
-			found=1;
+			found=true;
 			break;
 		}
 		comparision++;
