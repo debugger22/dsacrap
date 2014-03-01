@@ -1,7 +1,7 @@
 ##Searching Algorithms
 
 #####Data input format
-> (size) (elements)
+> (size) (elements)<br/>
 > (item to be searched)
 
 
