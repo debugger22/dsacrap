@@ -28,7 +28,6 @@ vector<int> partition(vector<int> parent){
 }
 
 int main(){
-	clock_t tStart = clock();
 	cin>>size;
 	for(int i=0;i<size;i++){
 		cin>>temp;
@@ -36,9 +35,11 @@ int main(){
 	}
 	vector<int> sorted;
 	sorted = partition(data);
+	cout<<"========Merge Sort========"<<endl;
+	cout<<"Result: ";
 	for(vector<int>::iterator it=sorted.begin();it!=sorted.end();++it)
-		cout<<' '<<*it;
-	
-	cout<<"Time taken"<< (double)(clock() - tStart)/CLOCKS_PER_SEC;
+		cout<<*it<<' ';
+	cout<<endl;
+	cout<<"No. of comparisions: "<<endl<<"No. of assignments: "<<endl;	
 	return 0;
 }
