@@ -4,7 +4,6 @@
 > size [elements]
 
 ####Bubble Sort
------------
 
 #####Input
 ```
@@ -20,7 +19,6 @@ No. of assignments: 540
 ```
 
 ####Insertion Sort
------------
 
 #####Input
 ```
