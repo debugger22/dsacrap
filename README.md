@@ -1,4 +1,4 @@
-Data Structures and Algorithm
+Data Structures and Algorithms
 =======
 
 Some small DSA programs
