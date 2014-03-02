@@ -1,4 +1,4 @@
-dsacrap
+Data Structures and Algorithm
 =======
 
-Some not working DSA code
+Some small DSA programs
