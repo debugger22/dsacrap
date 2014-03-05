@@ -67,6 +67,9 @@ void main(){
 	}
 }
 
+/*
+Function to add a node in the list
+*/
 void add(struct list *head, char val){
     //create new node
     struct list *newNode = (struct list*)malloc(sizeof(struct list));
@@ -92,6 +95,9 @@ void add(struct list *head, char val){
     }
 }
 
+/*
+Function to print the list
+*/
 void printlist(struct list *head) {
 	struct list *tmp = head;
 
@@ -108,6 +114,7 @@ void printlist(struct list *head) {
 	}
 }
 
+/*Function to insert a node in the list at a certain location*/
 void insert(struct list *head, int position, char val){
 	if(list_length(head)<position){
 		fprintf(stdout, "no");
@@ -127,6 +134,7 @@ void insert(struct list *head, int position, char val){
 	tmp->next = nxt;
 }
 
+/*Function to delete a node from the list*/
 char delete(struct list *head, int position){
    char item;
 	if(list_length(head)<position){
@@ -147,6 +155,7 @@ char delete(struct list *head, int position){
 	return item;
 }
 
+/*Function to reverse a list*/
 void list_reverse(struct list *head){
     struct list *ptr, *prev = NULL, *tmp;
     if (head == NULL) return;
@@ -161,6 +170,7 @@ void list_reverse(struct list *head){
     return;
 }
 
+/*Function to get the length of the a list*/
 unsigned int list_length(struct list *head){
     int count = -1;
     while (head){
@@ -169,7 +179,6 @@ unsigned int list_length(struct list *head){
     }
     return count;
 }
-
 
 void updateOp(unsigned int opType, char opChar, unsigned int opPos){
    for(i=0;i<4;i++){
